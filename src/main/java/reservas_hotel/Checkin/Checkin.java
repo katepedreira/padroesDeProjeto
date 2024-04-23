@@ -2,7 +2,7 @@ package reservas_hotel.Checkin;
 
 
 public class Checkin {
-    private Checkin() {};
+    public Checkin() {};
     private static Checkin instance = new Checkin();
 
     private String documentoHospede;

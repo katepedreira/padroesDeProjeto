@@ -1,31 +1,33 @@
 package reservas_hotel.PrecoReserva;
 
-public abstract class ReservaDecorator implements Reserva {
-    private Reserva reserva;
+import reservas_hotel.DetalhesReserva.Reserva;
+
+public abstract class ReservaDecorator implements ReservaInterface {
+    private ReservaInterface reservaInterface;
     public String estrutura;
 
-    public ReservaDecorator(Reserva reserva) {
-        this.reserva = reserva;
+    public ReservaDecorator(ReservaInterface reservaInterface) {
+        this.reservaInterface = reservaInterface;
     }
 
-    public Reserva getReserva() {return reserva;}
+    public ReservaInterface getReservaInterface() {return reservaInterface;}
 
-    public void setReserva(Reserva reserva) {
-        this.reserva = reserva;
+    public void setReservaInterface(ReservaInterface reservaInterface) {
+        this.reservaInterface = reservaInterface;
     }
 
     public abstract float getAlteracaoPrecoReserva();
 
     @Override
     public float getPrecoReserva() {
-        return reserva.getPrecoReserva() + getAlteracaoPrecoReserva();
+        return reservaInterface.getPrecoReserva() + getAlteracaoPrecoReserva();
     }
 
     public abstract String getNomeEstrutura();
 
     @Override
     public String getEstrutura() {
-        return this.reserva.getEstrutura() + "/" + this.getNomeEstrutura();
+        return this.reservaInterface.getEstrutura() + "/" + this.getNomeEstrutura();
     }
 
     public void setEstrutura(String estrutura) {
@@ -34,7 +36,7 @@ public abstract class ReservaDecorator implements Reserva {
 
     @Override
     public int getNumeroDeDias() {
-        return this.reserva.getNumeroDeDias();
+        return this.reservaInterface.getNumeroDeDias();
     }
 
 }

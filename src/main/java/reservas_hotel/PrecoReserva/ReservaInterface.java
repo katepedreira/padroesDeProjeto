@@ -1,9 +1,9 @@
 package reservas_hotel.PrecoReserva;
 
-public interface Reserva {
+public interface ReservaInterface {
+    int getNumeroDeDias();
     float getPrecoReserva();
     String getEstrutura();
-    int getNumeroDeDias();
 
 }
 

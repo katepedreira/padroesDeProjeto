@@ -1,5 +1,7 @@
 package reservas_hotel.PrecoReserva;
 
+import reservas_hotel.DetalhesReserva.Reserva;
+
 public class RefeicaoCafeDaManha extends ReservaDecorator {
 
     private static final float precoCafeDaManhaDia = 30.0f;

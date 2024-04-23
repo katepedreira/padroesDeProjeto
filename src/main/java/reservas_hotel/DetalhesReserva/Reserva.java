@@ -1,88 +1,50 @@
 package reservas_hotel.DetalhesReserva;
 
-public class Reserva {
+import reservas_hotel.PrecoReserva.ReservaInterface;
 
-    private String categoriaHospede;
-    private String tipoRefeicao;
-    private String nomeHospede;
-    private String tipoQuarto;
-    private Integer diarias;
-    private boolean transfer;
-    private boolean estacionamento;
-    private boolean acessoSpa;
-
+public class Reserva implements ReservaInterface {
+    private float precoBaseDiaria;
+    private int numeroDeDias;
+    private String estrutura;
 
     public Reserva() {
-        this.categoriaHospede = "";
-        this.tipoRefeicao= "";
-        this.nomeHospede = "";
-        this.tipoQuarto = "";
-        this.diarias = 0;
+        this.precoBaseDiaria = 0;
+        this.numeroDeDias = 0;
+        this.estrutura = "Reserva Base";
     }
 
-    public String getNomeHospede() {
-        return nomeHospede;
+    public Reserva(float precoBaseDiaria, int numeroDeDias) {
+        this.precoBaseDiaria = precoBaseDiaria;
+        this.numeroDeDias = numeroDeDias;
+        this.estrutura = "Reserva Base";
     }
 
-    public void setNomeHospede(String nomeHospede) {
-        this.nomeHospede = nomeHospede;
+    @Override
+    public float getPrecoReserva() {
+        return precoBaseDiaria * numeroDeDias;
     }
 
-    public String getTipoQuarto() {
-        return tipoQuarto;
+    @Override
+    public int getNumeroDeDias() {
+        return numeroDeDias;
     }
 
-    public void setTipoQuarto(String tipoQuarto) {
-        this.tipoQuarto = tipoQuarto;
+    @Override
+    public String getEstrutura() {
+        return estrutura;
     }
 
-    public Integer getDiarias() {
-        return diarias;
+    public void setPrecoBaseDiaria(float precoBaseDiaria) {
+        this.precoBaseDiaria = precoBaseDiaria;
     }
 
-    public void setDiarias(Integer diarias) {
-        this.diarias = diarias;
+    public void setNumeroDeDias(int numeroDeDias) {
+        this.numeroDeDias = numeroDeDias;
     }
 
-
-    public boolean isTransfer() {
-        return transfer;
-    }
-
-    public void setTransfer(boolean transfer) {
-        this.transfer = transfer;
-    }
-
-    public boolean isEstacionamento() {
-        return estacionamento;
-    }
-
-    public void setEstacionamento(boolean estacionamento) {
-        this.estacionamento = estacionamento;
-    }
-
-    public boolean isAcessoSpa() {
-        return acessoSpa;
-    }
-
-    public void setAcessoSpa(boolean acessoSpa) {
-        this.acessoSpa = acessoSpa;
-    }
-
-    public String getTipoRefeicao() {
-        return tipoRefeicao;
-    }
-
-    public void setTipoRefeicao(String tipoRefeicao) {
-        this.tipoRefeicao = tipoRefeicao;
-    }
-
-    public String getCategoriaHospede() {
-        return categoriaHospede;
-    }
-
-    public void setCategoriaHospede(String categoriaHospede) {
-        this.categoriaHospede = categoriaHospede;
+    public void setEstrutura(String estrutura) {
+        this.estrutura = estrutura;
     }
 }
+
 
