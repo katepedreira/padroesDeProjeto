@@ -1,7 +1,5 @@
 package reservas_hotel.PrecoReserva;
 
-import reservas_hotel.DetalhesReserva.Reserva;
-
 public abstract class ReservaDecorator implements ReservaInterface {
     private ReservaInterface reservaInterface;
     public String estrutura;

@@ -1,10 +1,10 @@
 package reservas_hotel.PrecoReserva;
 
-import reservas_hotel.DetalhesReserva.Reserva;
+import reservas_hotel.Tarifario.Tarifario;
 
 public class Estacionamento extends ReservaDecorator {
 
-    private static final float precoEstacionamentoDia = 20.0f;
+    private static final float precoEstacionamentoDia = Tarifario.getInstance().getPrecoEstacionamento();
 
     public Estacionamento(ReservaInterface reservaInterface) {
         super(reservaInterface);

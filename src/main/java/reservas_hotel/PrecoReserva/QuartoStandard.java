@@ -1,10 +1,11 @@
 package reservas_hotel.PrecoReserva;
 
 import reservas_hotel.DetalhesReserva.Reserva;
+import reservas_hotel.Tarifario.Tarifario;
 
 public class QuartoStandard extends ReservaDecorator {
 
-    private static final float precoQuartoStandardDia = 50.0f;
+    private static final float precoQuartoStandardDia = Tarifario.getInstance().getPrecoQuartoStandard();
 
     public QuartoStandard(ReservaInterface reservaInterface) {
         super(reservaInterface);

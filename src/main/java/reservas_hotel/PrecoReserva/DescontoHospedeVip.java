@@ -1,10 +1,10 @@
 package reservas_hotel.PrecoReserva;
 
-import reservas_hotel.DetalhesReserva.Reserva;
+import reservas_hotel.Tarifario.Tarifario;
 
 public class DescontoHospedeVip extends ReservaDecorator {
 
-    private static final float descontoVip = -10.0f;
+    private static final float descontoVip = -(Tarifario.getInstance().getDescontoHospedeVip());
 
     public DescontoHospedeVip(ReservaInterface reservaInterface) {
         super(reservaInterface);

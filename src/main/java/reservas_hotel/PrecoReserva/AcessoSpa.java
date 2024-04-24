@@ -1,9 +1,10 @@
 package reservas_hotel.PrecoReserva;
 
-import reservas_hotel.DetalhesReserva.Reserva;
+import reservas_hotel.Tarifario.Tarifario;
 
 public class AcessoSpa extends ReservaDecorator {
-    private static final float precoAcessoSpa = 200.0f;
+
+    private static final float precoAcessoSpa = Tarifario.getInstance().getPrecoAcessoSpa();
 
     public AcessoSpa(ReservaInterface reservaInterface) {
         super(reservaInterface);
@@ -19,4 +20,3 @@ public class AcessoSpa extends ReservaDecorator {
         return "Acesso ao Spa";
     }
 }
-
