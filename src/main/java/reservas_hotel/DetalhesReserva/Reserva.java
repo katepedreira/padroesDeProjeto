@@ -1,8 +1,11 @@
 package reservas_hotel.DetalhesReserva;
 
 import reservas_hotel.PrecoReserva.ReservaInterface;
+import reservas_hotel.TipoHospede.Hospede;
 
 public class Reserva implements ReservaInterface {
+
+    private Hospede hospede;
     private float precoBaseDiaria;
     private int numeroDeDias;
     private String estrutura;
@@ -44,6 +47,18 @@ public class Reserva implements ReservaInterface {
 
     public void setEstrutura(String estrutura) {
         this.estrutura = estrutura;
+    }
+
+    public Hospede getHospede() {
+        return hospede;
+    }
+
+    public void setHospede(Hospede hospede) {
+        this.hospede = hospede;
+    }
+
+    public float getPrecoBaseDiaria() {
+        return precoBaseDiaria;
     }
 }
 
