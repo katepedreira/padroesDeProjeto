@@ -6,8 +6,8 @@ public class DescontoHospedeVip extends ReservaDecorator {
 
     private static final float descontoVip = -10.0f;
 
-    public DescontoHospedeVip(Reserva reserva) {
-        super(reserva);
+    public DescontoHospedeVip(ReservaInterface reservaInterface) {
+        super(reservaInterface);
     }
 
     @Override

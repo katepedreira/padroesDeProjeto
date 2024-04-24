@@ -6,8 +6,8 @@ public class RefeicaoAllInclusive extends ReservaDecorator {
 
     private static final float precoAllInclusiveDia = 100.0f;
 
-    public RefeicaoAllInclusive(Reserva reserva) {
-        super(reserva);
+    public RefeicaoAllInclusive(ReservaInterface reservaInterface) {
+        super(reservaInterface);
     }
 
     @Override

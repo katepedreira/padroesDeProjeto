@@ -6,8 +6,8 @@ public class QuartoStandard extends ReservaDecorator {
 
     private static final float precoQuartoStandardDia = 50.0f;
 
-    public QuartoStandard(Reserva reserva) {
-        super(reserva);
+    public QuartoStandard(ReservaInterface reservaInterface) {
+        super(reservaInterface);
     }
 
     @Override

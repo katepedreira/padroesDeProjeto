@@ -5,8 +5,8 @@ import reservas_hotel.DetalhesReserva.Reserva;
 public class AcessoSpa extends ReservaDecorator {
     private static final float precoAcessoSpa = 200.0f;
 
-    public AcessoSpa(Reserva reserva) {
-        super(reserva);
+    public AcessoSpa(ReservaInterface reservaInterface) {
+        super(reservaInterface);
     }
 
     @Override

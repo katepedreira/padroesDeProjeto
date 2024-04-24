@@ -6,8 +6,8 @@ public class Transfer extends ReservaDecorator{
 
     private static final float precoTransfer = 60.0f;
 
-    public Transfer(Reserva reserva) {
-        super(reserva);
+    public Transfer(ReservaInterface reservaInterface) {
+        super(reservaInterface);
     }
 
     @Override

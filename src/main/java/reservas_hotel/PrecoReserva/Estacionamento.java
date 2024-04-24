@@ -6,8 +6,8 @@ public class Estacionamento extends ReservaDecorator {
 
     private static final float precoEstacionamentoDia = 20.0f;
 
-    public Estacionamento(Reserva reserva) {
-        super(reserva);
+    public Estacionamento(ReservaInterface reservaInterface) {
+        super(reservaInterface);
     }
 
     @Override

@@ -2,7 +2,6 @@ package Hotel;
 
 import org.junit.jupiter.api.Test;
 import reservas_hotel.DetalhesReserva.Reserva;
-import reservas_hotel.DetalhesReserva.ReservaOld;
 import reservas_hotel.DetalhesReserva.ReservaBuilder;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,7 +12,7 @@ public class DetalhesReservaTest {
     void deveRetornarExcecaoParaHospedeSemNumDeDias() {
         try {
             Reserva detalhesReserva = new ReservaBuilder()
-                    .setPrecoBaseDiaria(100)
+                    .setPrecoBaseDiaria(100f)
                     .build();
             fail();
         } catch (IllegalArgumentException e) {
@@ -32,7 +31,6 @@ public class DetalhesReservaTest {
             assertEquals("Preço inválido", e.getMessage());
         }
     }
-
 
     @Test
     void deveRetornarReservaValida() {

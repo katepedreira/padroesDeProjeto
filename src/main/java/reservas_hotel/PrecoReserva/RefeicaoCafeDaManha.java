@@ -6,8 +6,8 @@ public class RefeicaoCafeDaManha extends ReservaDecorator {
 
     private static final float precoCafeDaManhaDia = 30.0f;
 
-    public RefeicaoCafeDaManha(Reserva reserva) {
-        super(reserva);
+    public RefeicaoCafeDaManha(ReservaInterface reservaInterface) {
+        super(reservaInterface);
     }
 
     @Override

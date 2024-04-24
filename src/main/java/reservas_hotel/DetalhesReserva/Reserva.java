@@ -8,7 +8,7 @@ public class Reserva implements ReservaInterface {
     private String estrutura;
 
     public Reserva() {
-        this.precoBaseDiaria = 0;
+        this.precoBaseDiaria = 0f;
         this.numeroDeDias = 0;
         this.estrutura = "Reserva Base";
     }

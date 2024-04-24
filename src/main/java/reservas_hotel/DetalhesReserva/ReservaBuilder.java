@@ -9,13 +9,12 @@ public class ReservaBuilder {
     }
 
     public Reserva build() {
-        if (reserva.getPrecoReserva() <= 0) {
-            throw new IllegalArgumentException("Preço inválido");
-        }
         if (reserva.getNumeroDeDias() <= 0) {
             throw new IllegalArgumentException("Número de dias inválido");
         }
-
+        if (reserva.getPrecoReserva() <= 0.0f) {
+            throw new IllegalArgumentException("Preço inválido");
+        }
         return reserva;
     }
 
