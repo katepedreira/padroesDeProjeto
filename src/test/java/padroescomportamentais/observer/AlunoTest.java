@@ -1,6 +1,8 @@
 package padroescomportamentais.observer;
 
 import org.junit.jupiter.api.Test;
+import padroescomportamentais.observer.Escola.Aluno;
+import padroescomportamentais.observer.Escola.Turma;
 
 import static org.junit.jupiter.api.Assertions.*;
 

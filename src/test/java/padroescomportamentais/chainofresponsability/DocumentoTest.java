@@ -2,6 +2,7 @@ package padroescomportamentais.chainofresponsability;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import padroescomportamentais.chainofresponsability.Escola.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 

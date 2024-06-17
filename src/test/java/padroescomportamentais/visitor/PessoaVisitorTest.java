@@ -1,6 +1,7 @@
 package padroescomportamentais.visitor;
 
 import org.junit.jupiter.api.Test;
+import padroescomportamentais.visitor.Escola.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 

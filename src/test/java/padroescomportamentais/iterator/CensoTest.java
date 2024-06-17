@@ -1,6 +1,9 @@
 package padroescomportamentais.iterator;
 
 import org.junit.jupiter.api.Test;
+import padroescomportamentais.iterator.Escola.Aluno;
+import padroescomportamentais.iterator.Escola.Censo;
+import padroescomportamentais.iterator.Escola.Curso;
 
 import static org.junit.jupiter.api.Assertions.*;
 

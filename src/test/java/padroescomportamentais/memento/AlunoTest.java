@@ -1,6 +1,10 @@
 package padroescomportamentais.memento;
 
 import org.junit.jupiter.api.Test;
+import padroescomportamentais.memento.Escola.Aluno;
+import padroescomportamentais.memento.Escola.AlunoEstadoFormado;
+import padroescomportamentais.memento.Escola.AlunoEstadoMatriculado;
+import padroescomportamentais.memento.Escola.AlunoEstadoTrancado;
 
 import static org.junit.jupiter.api.Assertions.*;
 

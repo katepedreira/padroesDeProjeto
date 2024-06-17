@@ -1,6 +1,7 @@
 package padroescomportamentais.interpreter;
 
 import org.junit.jupiter.api.Test;
+import padroescomportamentais.interpreter.Escola.Aluno;
 
 import static org.junit.jupiter.api.Assertions.*;
 

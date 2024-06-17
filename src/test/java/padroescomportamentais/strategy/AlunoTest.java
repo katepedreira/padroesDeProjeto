@@ -1,6 +1,7 @@
 package padroescomportamentais.strategy;
 
 import org.junit.jupiter.api.Test;
+import padroescomportamentais.strategy.Escola.Aluno;
 
 import static org.junit.jupiter.api.Assertions.*;
 

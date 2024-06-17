@@ -1,9 +1,12 @@
 package padroescomportamentais.state;
 
+import padroescomportamentais.state.situacaoAluno.AlunoEstado;
+import padroescomportamentais.state.situacaoAluno.AlunoEstadoMatriculado;
+
 public class Aluno {
     
     private String nome;
-    private AlunoEstado estado;    
+    private AlunoEstado estado;
 
     public Aluno() {
         this.estado = AlunoEstadoMatriculado.getInstance();
